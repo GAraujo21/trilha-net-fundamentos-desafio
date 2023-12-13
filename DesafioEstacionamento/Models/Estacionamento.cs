@@ -16,7 +16,7 @@ namespace DesafioFundamentos.Models
         {
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine(); 
-            // fazer um futuro if, para verificar se a placa que esta sendo digitada já existe, se sim, não pode adicionar, se não, adicionar
+            
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
             {
                 Console.WriteLine("Perdão, houve um equívoco, a placa digitada já existe no sistema. Por favor tentar novamnete!");
@@ -32,7 +32,7 @@ namespace DesafioFundamentos.Models
 
             string placa = Console.ReadLine();
 
-            // Verifica se o veículo existe
+            
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
             {
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
@@ -52,7 +52,7 @@ namespace DesafioFundamentos.Models
 
         public void ListarVeiculos()
         {
-            // Verifica se há veículos no estacionamento
+            
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
